@@ -28,6 +28,7 @@ const routes: Routes = [
   {
     path: 'posts/details/:id',
     component: SinglePostComponent,
+    resolve: { posts: PostsResolver },
   },
 ];
 

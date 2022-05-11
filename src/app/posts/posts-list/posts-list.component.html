@@ -22,7 +22,9 @@
       <td>{{ post.description }}</td>
       <td>
         <a [routerLink]="['/posts', 'edit', post.id]">Edit Post</a>&nbsp;
-        <a href="" (click)="onDeletePost($event, post.id!)">Delete Post</a>
+        <a href="" (click)="onDeletePost($event, post.id!)">Delete Post</a
+        >&nbsp;
+        <a [routerLink]="['/posts', 'details', post.id]">View Post</a>&nbsp;
       </td>
     </tr>
   </tbody>
